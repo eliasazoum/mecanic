@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Étudiant en Génie Mécanique</title>
+  <meta name="description" content="Portfolio d’un étudiant marocain en Génie Mécanique, récemment diplômé et en recherche d’emploi." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0f1115; --panel:#181a20; --text:#f0f0f0; --muted:#9ca3af; --brand:#f59e0b; --stroke:#2c2f36; --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.4);
+    }
+    body{margin:0;font-family:Inter, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;backdrop-filter:blur(6px);background:rgba(15,17,21,.8);border-bottom:1px solid var(--stroke)}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:700;font-size:1.2rem;color:var(--brand)}
+    .nav a{padding:8px 12px;border-radius:8px;}
+    .nav a:hover{background:var(--stroke)}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:40px 0}
+    .card{background:var(--panel);padding:24px;border-radius:var(--radius);border:1px solid var(--stroke);box-shadow:var(--shadow)}
+    h1,h2,h3,h4{margin:0 0 12px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .tag{padding:6px 10px;border-radius:999px;border:1px dashed var(--stroke);font-size:.9rem;color:var(--muted)}
+    section{margin:50px 0}
+    .grid{display:grid;gap:20px}
+    .two{grid-template-columns:1fr 1fr}
+    .item h4{margin:0 0 6px}
+    .sub{color:var(--muted);font-size:.95rem}
+    footer{text-align:center;margin:40px 0;color:var(--muted);font-size:.9rem}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">👨‍🔧 Étudiant Génie Mécanique</div>
+      <nav>
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="card">
+        <h1>Bonjour, je m’appelle <span style="color:var(--brand)">Yassine El Mekki</span></h1>
+        <h2>Diplômé en Génie Mécanique – Maroc</h2>
+        <p>Je suis un jeune ingénieur mécanique récemment diplômé, passionné par la conception, la maintenance industrielle et l’innovation technologique. Je recherche activement une opportunité pour mettre mes compétences en pratique et contribuer au développement de solutions mécaniques performantes.</p>
+        <div class="tags">
+          <span class="tag">Conception 3D</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">CATIA</span>
+          <span class="tag">AutoCAD</span>
+          <span class="tag">Maintenance</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Informations</h3>
+        <p><strong>Email:</strong> yassine.meca@example.com</p>
+        <p><strong>Téléphone:</strong> +212 600 000 000</p>
+        <p><strong>Localisation:</strong> Casablanca, Maroc</p>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+      <h3>Projets Académiques</h3>
+      <div class="grid two">
+        <div class="card item">
+          <h4>Optimisation d’une chaîne de production</h4>
+          <div class="sub">Projet de fin d’études</div>
+          <p>Étude et amélioration d’une ligne de fabrication mécanique afin d’augmenter l’efficacité énergétique et réduire les coûts de maintenance.</p>
+        </div>
+        <div class="card item">
+          <h4>Conception d’un système de freinage</h4>
+          <div class="sub">Projet universitaire</div>
+          <p>Modélisation 3D et simulation d’un système de freinage automobile avec SolidWorks, analyse des contraintes et validation des performances.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expérience -->
+    <section id="experience">
+      <h3>Expérience</h3>
+      <div class="grid">
+        <div class="card item">
+          <h4>Stagiaire – Usine Automobile</h4>
+          <div class="sub">Tanger, Maroc · Été 2024</div>
+          <p>Participation aux activités de maintenance préventive et corrective sur des machines de production. Contribution à l’amélioration continue des procédés.</p>
+        </div>
+        <div class="card item">
+          <h4>Stagiaire – Bureau d’Études</h4>
+          <div class="sub">Casablanca, Maroc · Été 2023</div>
+          <p>Travail sur la conception assistée par ordinateur (CAO) et préparation de plans techniques pour divers projets industriels.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences">
+      <h3>Compétences</h3>
+      <div class="grid two">
+        <div class="card item">
+          <h4>Techniques</h4>
+          <p>SolidWorks, CATIA, AutoCAD, Simulation mécanique, CAO/DAO, Analyse des contraintes.</p>
+        </div>
+        <div class="card item">
+          <h4>Transversales</h4>
+          <p>Travail en équipe, Gestion du temps, Esprit d’analyse, Communication technique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="card">
+        <p>📧 <a href="mailto:yassine.meca@example.com">yassine.meca@example.com</a></p>
+        <p>📞 +212 600 000 000</p>
+        <p>🔗 <a href="https://www.linkedin.com/">LinkedIn</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> – Portfolio Génie Mécanique – Casablanca, Maroc
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
