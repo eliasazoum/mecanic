@@ -3,39 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio – Étudiant en Génie Mécanique</title>
-  <meta name="description" content="Portfolio d’un étudiant marocain en Génie Mécanique, récemment diplômé et en recherche d’emploi." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Portfolio – Yassine El Mekki | Ingénieur Mécanique</title>
+  <meta name="description" content="Portfolio de Yassine El Mekki, jeune ingénieur mécanique marocain passionné par la conception, l’innovation et la maintenance industrielle." />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: #0f1115; --panel:#181a20; --text:#f0f0f0; --muted:#9ca3af; --brand:#f59e0b; --stroke:#2c2f36; --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.4);
+      --bg:#0c0d10; --panel:#15171e; --text:#eaeaea; --muted:#a0a0a0; --brand:#fbbf24; --brand2:#f59e0b; --stroke:#272933; --radius:18px; --shadow:0 10px 40px rgba(0,0,0,.5);
     }
-    body{margin:0;font-family:Inter, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1000px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;z-index:50;backdrop-filter:blur(6px);background:rgba(15,17,21,.8);border-bottom:1px solid var(--stroke)}
+    body{margin:0;font-family:Inter, sans-serif;background:radial-gradient(circle at 30% -10%, rgba(251,191,36,.08), transparent 60%), var(--bg);color:var(--text);line-height:1.6;}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;background:rgba(12,13,16,.85);backdrop-filter:blur(6px);border-bottom:1px solid var(--stroke)}
     .nav{display:flex;justify-content:space-between;align-items:center}
-    .logo{font-weight:700;font-size:1.2rem;color:var(--brand)}
-    .nav a{padding:8px 12px;border-radius:8px;}
-    .nav a:hover{background:var(--stroke)}
-    .hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:40px 0}
-    .card{background:var(--panel);padding:24px;border-radius:var(--radius);border:1px solid var(--stroke);box-shadow:var(--shadow)}
+    .logo{font-family:Orbitron, sans-serif;font-size:1.3rem;font-weight:700;color:var(--brand);letter-spacing:1px}
+    nav a{margin-left:14px;padding:8px 14px;border-radius:8px;transition:.2s}
+    nav a:hover{background:var(--stroke);color:var(--brand)}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:60px 0}
+    .card{background:var(--panel);padding:28px;border-radius:var(--radius);border:1px solid var(--stroke);box-shadow:var(--shadow)}
     h1,h2,h3,h4{margin:0 0 12px}
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .tag{padding:6px 10px;border-radius:999px;border:1px dashed var(--stroke);font-size:.9rem;color:var(--muted)}
-    section{margin:50px 0}
-    .grid{display:grid;gap:20px}
+    h1 span{color:var(--brand)}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .tag{padding:6px 12px;border-radius:999px;border:1px dashed var(--brand);font-size:.85rem;color:var(--brand)}
+    section{margin:60px 0}
+    .grid{display:grid;gap:24px}
     .two{grid-template-columns:1fr 1fr}
+    .three{grid-template-columns:repeat(3,1fr)}
     .item h4{margin:0 0 6px}
     .sub{color:var(--muted);font-size:.95rem}
-    footer{text-align:center;margin:40px 0;color:var(--muted);font-size:.9rem}
-    @media(max-width:800px){.hero{grid-template-columns:1fr}.two{grid-template-columns:1fr}}
+    .gear{font-size:3rem;color:var(--brand);margin-bottom:12px;text-align:center}
+    footer{text-align:center;margin:60px 0 20px;color:var(--muted);font-size:.9rem}
+    @media(max-width:850px){.hero{grid-template-columns:1fr}.two,.three{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap nav">
-      <div class="logo">👨‍🔧 Étudiant Génie Mécanique</div>
+      <div class="logo">⚙️ Yassine El Mekki</div>
       <nav>
         <a href="#projets">Projets</a>
         <a href="#experience">Expérience</a>
@@ -49,38 +52,41 @@
     <!-- Hero -->
     <section class="hero">
       <div class="card">
-        <h1>Bonjour, je m’appelle <span style="color:var(--brand)">Yassine El Mekki</span></h1>
-        <h2>Diplômé en Génie Mécanique – Maroc</h2>
-        <p>Je suis un jeune ingénieur mécanique récemment diplômé, passionné par la conception, la maintenance industrielle et l’innovation technologique. Je recherche activement une opportunité pour mettre mes compétences en pratique et contribuer au développement de solutions mécaniques performantes.</p>
+        <h1>Je suis <span>Yassine El Mekki</span></h1>
+        <h2>Ingénieur Mécanique – Maroc</h2>
+        <p>Fraîchement diplômé en génie mécanique, passionné par la conception de systèmes mécaniques, la modélisation 3D et l’optimisation industrielle. Mon objectif est d’intégrer une entreprise innovante où je pourrai mettre à profit mes compétences techniques et mon esprit d’ingénieur.</p>
         <div class="tags">
-          <span class="tag">Conception 3D</span>
           <span class="tag">SolidWorks</span>
           <span class="tag">CATIA</span>
           <span class="tag">AutoCAD</span>
           <span class="tag">Maintenance</span>
+          <span class="tag">Simulation</span>
         </div>
       </div>
       <div class="card">
-        <h3>Informations</h3>
+        <h3>Informations de contact</h3>
         <p><strong>Email:</strong> yassine.meca@example.com</p>
         <p><strong>Téléphone:</strong> +212 600 000 000</p>
         <p><strong>Localisation:</strong> Casablanca, Maroc</p>
+        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/yassine-meca</a></p>
       </div>
     </section>
 
     <!-- Projets -->
     <section id="projets">
-      <h3>Projets Académiques</h3>
+      <h3>Projets Mécaniques</h3>
       <div class="grid two">
         <div class="card item">
-          <h4>Optimisation d’une chaîne de production</h4>
+          <div class="gear">⚙️</div>
+          <h4>Conception d’un robot industriel</h4>
           <div class="sub">Projet de fin d’études</div>
-          <p>Étude et amélioration d’une ligne de fabrication mécanique afin d’augmenter l’efficacité énergétique et réduire les coûts de maintenance.</p>
+          <p>Étude, conception et simulation d’un bras robotisé destiné à l’assemblage en ligne de production. Utilisation de SolidWorks pour la modélisation et d’outils de simulation pour valider la cinématique.</p>
         </div>
         <div class="card item">
-          <h4>Conception d’un système de freinage</h4>
-          <div class="sub">Projet universitaire</div>
-          <p>Modélisation 3D et simulation d’un système de freinage automobile avec SolidWorks, analyse des contraintes et validation des performances.</p>
+          <div class="gear">🔩</div>
+          <h4>Système de refroidissement automobile</h4>
+          <div class="sub">Projet académique</div>
+          <p>Analyse thermique et conception d’un système de refroidissement innovant pour moteur à combustion. Réalisation de plans 3D et tests virtuels pour améliorer la durabilité.</p>
         </div>
       </div>
     </section>
@@ -90,14 +96,16 @@
       <h3>Expérience</h3>
       <div class="grid">
         <div class="card item">
-          <h4>Stagiaire – Usine Automobile</h4>
-          <div class="sub">Tanger, Maroc · Été 2024</div>
-          <p>Participation aux activités de maintenance préventive et corrective sur des machines de production. Contribution à l’amélioration continue des procédés.</p>
+          <div class="gear">🏭</div>
+          <h4>Stage – Usine Automobile</h4>
+          <div class="sub">Tanger, Été 2024</div>
+          <p>Participation à la maintenance préventive et corrective des lignes de production. Contribution à l’amélioration continue des procédés et à la réduction des arrêts techniques.</p>
         </div>
         <div class="card item">
-          <h4>Stagiaire – Bureau d’Études</h4>
-          <div class="sub">Casablanca, Maroc · Été 2023</div>
-          <p>Travail sur la conception assistée par ordinateur (CAO) et préparation de plans techniques pour divers projets industriels.</p>
+          <div class="gear">📐</div>
+          <h4>Stage – Bureau d’Études</h4>
+          <div class="sub">Casablanca, Été 2023</div>
+          <p>Réalisation de conceptions CAO sur CATIA et SolidWorks. Collaboration avec une équipe multidisciplinaire pour développer des prototypes industriels.</p>
         </div>
       </div>
     </section>
@@ -105,14 +113,21 @@
     <!-- Compétences -->
     <section id="competences">
       <h3>Compétences</h3>
-      <div class="grid two">
+      <div class="grid three">
         <div class="card item">
+          <div class="gear">🛠️</div>
           <h4>Techniques</h4>
-          <p>SolidWorks, CATIA, AutoCAD, Simulation mécanique, CAO/DAO, Analyse des contraintes.</p>
+          <p>Conception 3D, Simulation mécanique, Analyse des contraintes, Fabrication assistée.</p>
         </div>
         <div class="card item">
+          <div class="gear">🤝</div>
           <h4>Transversales</h4>
-          <p>Travail en équipe, Gestion du temps, Esprit d’analyse, Communication technique.</p>
+          <p>Travail en équipe, Gestion de projet, Communication technique, Esprit d’innovation.</p>
+        </div>
+        <div class="card item">
+          <div class="gear">🚀</div>
+          <h4>Intérêts</h4>
+          <p>Innovation industrielle, Robotique, Énergies renouvelables, Optimisation de procédés.</p>
         </div>
       </div>
     </section>
@@ -123,12 +138,12 @@
       <div class="card">
         <p>📧 <a href="mailto:yassine.meca@example.com">yassine.meca@example.com</a></p>
         <p>📞 +212 600 000 000</p>
-        <p>🔗 <a href="https://www.linkedin.com/">LinkedIn</a></p>
+        <p>🔗 <a href="#">LinkedIn</a></p>
       </div>
     </section>
 
     <footer>
-      © <span id="year"></span> – Portfolio Génie Mécanique – Casablanca, Maroc
+      © <span id="year"></span> – Portfolio Ingénieur Mécanique – Yassine El Mekki
     </footer>
   </main>
 
